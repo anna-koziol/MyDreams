@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Enriqueta', serif !important;
+    background: rgb(248, 247, 246);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(255, 212, 38);
+    width: 100vw;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+select, option {
+    font-family: 'Enriqueta', serif !important;
+    width: 20%;
+    font-size: 1em;
+    text-transform: lowercase;
+    padding: 10px;
+    margin: 10px;
+}
+
+#selects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+tr, td {
+    border: 2px solid black;
+    padding: 1%;
+    /* padding-left: 4%;
+    padding-right: 4%; */
+    text-align: center;
+}
+
+td {
+    min-width: 20%;
+    padding: 1%;
+    max-width: 25%;
+}
+
+.option {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.option:nth-child(2n+1) {
+    background-color: brown;
+}
+
+table {
+    width: 80% !important;
+}
+
+#addingNew {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+}
+
+#search {
+    width: 40vw;
+    background-color: #333131;
+    color: white;
+}
+
+input, button {
+    border-radius: 2px;
+    padding: 8px;
+    border: 0px solid black !important;
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+}
+
+button, input[value="Zaloguj"], input[value="Zarejestruj"], input[value="Dodaj"] {
+    text-align: center;
+    text-transform: uppercase !important;
+    transition: 0.5s;
+    color: white;
+    background-size: 200% auto;
+    box-shadow: 0 0 5px rgb(211, 210, 210);
+    background-color: rgb(248, 197, 0);
+}
+
+button:hover, input[value="Zaloguj"]:hover, input[value="Zarejestruj"]:hover, input[value="Dodaj"]:hover {
+    background-color: rgb(219, 177, 10);
+}
+
+input[value="Zaloguj"], input[value="Zarejestruj"] {
+    width: 150%;
+}
+
+#content {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    display: none;
+}
+
+#loging {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#moreTime, #firstTime {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    display: none;
+}
+
+.imgLeft {
+    background-image: url("kleiton-silva-1056751-unsplash.jpg");
+    width: 50vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right {
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+h2 {
+    margin-bottom: 15vh !important;
+}
+
+#basket {
+    background-image: url("check.png");
+    height: 10vh;
+    width: 10vh;
+    margin: 3vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-weight: bold;
+}
+
+#basketAll {
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+
+#basketAll:hover, #cross:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+#done {
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    top: 15vh;
+    left: 10vw;
+    border: 3px double rgb(27, 27, 27);
+    background-color: white;
+    display: none;
+}
+
+#cross {
+    background-image: url("close.png");
+    height: 5vh;
+    width: 5vh;
+    margin: 1vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
